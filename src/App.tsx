@@ -386,13 +386,16 @@ export default function App() {
                 </p>
               </div>
 
-              <button
-                onClick={handleToggleFlashAudio}
-                className="shrink-0 px-6 py-3 bg-slate-950 hover:bg-slate-900 text-amber-400 font-black rounded-2xl text-xs sm:text-sm transition shadow-lg flex items-center gap-2"
+              <a
+                href="https://www.profitableratecpmnetwork.com/gcgkew758?key=ebf7f8310ffa1609e5b55f141cf56488"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => handleToggleFlashAudio()}
+                className="shrink-0 px-6 py-3 bg-slate-950 hover:bg-slate-900 text-amber-400 font-black rounded-2xl text-xs sm:text-sm transition shadow-lg flex items-center gap-2 cursor-pointer"
               >
                 <Zap className="w-4 h-4 fill-amber-400" />
                 {isAudioPlaying ? 'Arrêter la lecture' : 'Lancer le Flash Audio'}
-              </button>
+              </a>
             </div>
           </div>
 

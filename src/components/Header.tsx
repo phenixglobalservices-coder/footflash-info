@@ -152,15 +152,20 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Actions: Audio Flash, Bookmarks, Mobile Toggle */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Audio Flash Reader Button */}
-            <button
-              onClick={onToggleFlashAudio}
+            {/* Audio Flash Reader Button / Link */}
+            <a
+              href="https://www.profitableratecpmnetwork.com/gcgkew758?key=ebf7f8310ffa1609e5b55f141cf56488"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                onToggleFlashAudio();
+              }}
               className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold transition shadow-md ${
                 isAudioPlaying
                   ? 'bg-amber-400 text-slate-950 shadow-amber-400/30 animate-pulse'
                   : 'bg-slate-800/90 text-slate-200 hover:bg-slate-700 border border-slate-700/60'
               }`}
-              title="Écouter le flash audio en direct"
+              title="Écouter le flash vocal en direct"
             >
               {isAudioPlaying ? (
                 <>
@@ -173,7 +178,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <span className="hidden sm:inline">Flash Vocal</span>
                 </>
               )}
-            </button>
+            </a>
 
             {/* Bookmarks Counter Button */}
             <button
