@@ -17,6 +17,15 @@ import {
 import { 
   MercatoRadar 
 } from './components/MercatoRadar';
+import {
+  AdBanner
+} from './components/AdBanner';
+import {
+  AdBanner320x50
+} from './components/AdBanner320x50';
+import {
+  AdBanner300x250
+} from './components/AdBanner300x250';
 import { 
   StandingsWidget 
 } from './components/StandingsWidget';
@@ -395,10 +404,16 @@ export default function App() {
               onSimulateNewFlash={handleSimulateNewFlash}
             />
 
+            {/* Mobile / Compact Ad Slot (320x50) */}
+            <AdBanner320x50 />
+
             {/* Daily Fan Vote Poll */}
             <PollWidget />
           </div>
         </div>
+
+        {/* Advertisement Slot */}
+        <AdBanner />
 
         {/* Section 2: Mercato Radar */}
         <div id="mercato">
@@ -433,6 +448,9 @@ export default function App() {
                 Rejoindre la Matinale Foot (Gratuit)
               </button>
             </div>
+
+            {/* Medium Rectangle Ad Banner (300x250) */}
+            <AdBanner300x250 />
 
             {/* Editorial Commitment card */}
             <div className="bg-slate-900 border border-slate-800 rounded-3xl p-5 text-xs text-slate-400 space-y-2">
