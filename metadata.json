@@ -1,0 +1,6 @@
+{
+  "name": "Foot Flash Info",
+  "description": "Le média d'actualité football en direct : flash info 24/7, mercato, scores en direct, analyses tactiques et classements des grands championnats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
